@@ -1,3 +1,13 @@
+:root {
+  --primary-1: hsl(233, 26%, 24%);
+  --primary-2: hsl(136, 65%, 51%);
+  --primary-3: hsl(192, 70%, 51%);
+
+  --neutral-dark-1: hsl(233, 8%, 62%);
+  --neutral-dark-2: hsl(220, 16%, 96%);
+  --neutral-light-1: hsl(0, 0%, 98%);
+  --neutral-light-2: hsl(0, 0%, 100%);
+}
 *,
 *::after,
 *::before {
