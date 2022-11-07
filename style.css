@@ -55,7 +55,8 @@ nav {
   background-color: var(--neutral-light-2);
   box-shadow: var(--shadow);
   z-index: 5;
-  position: relative;
+  position: sticky;
+  top: 0;
 }
 
 .nav {
@@ -194,7 +195,7 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: calc(0.5 * var(--mw));
+  max-width: calc(0.3 * var(--mw));
   margin: var(--default-padding) auto;
 }
 
@@ -261,7 +262,7 @@ nav {
 }
 
 .article {
-  width: 90%;
+  width: 100%;
   margin: auto;
   border-radius: calc(2 * var(--rounded));
   overflow: hidden;
@@ -493,13 +494,12 @@ header {
   }
 
   header {
-    min-height: 80vh;
+    min-height: 70vh;
   }
 
   .header {
     margin-top: 0rem;
     background-image: url(/images/bg-intro-desktop.svg);
-    background-repeat: repeat-y;
     background-size: 55% auto;
     background-position: top right;
     width: 100%;
@@ -522,7 +522,7 @@ header {
   }
   .about .container,
   .article-list .container {
-    min-height: 60vh;
+    min-height: 40vh;
   }
   .desktop-only {
     display: block;
@@ -611,6 +611,10 @@ header {
     height: 50vh;
   }
 
+  .article-list .container {
+    padding: calc(1.25 * var(--default-padding));
+  }
+
   .article-container {
     grid-template-columns: repeat(4, 1fr);
     gap: calc(1.125 * var(--default-padding));
@@ -664,7 +668,7 @@ header {
   }
   .mockup {
     max-width: calc(0.6 * var(--mw));
-    width: 50%;
+    width: 45%;
     top: -50%;
   }
 
