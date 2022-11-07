@@ -11,7 +11,7 @@
   --shadow: 0 0.15rem 3rem rgba(0 0 0 / 0.15);
   --rounded: 0.25rem;
   --tr: all 0.25s linear;
-  --mw: 85rem;
+  --mw: 70rem;
 }
 *,
 *::after,
@@ -180,7 +180,71 @@ nav {
   box-shadow: var(--shadow);
 }
 
+/* ABOUT SECTION */
+.about {
+  color: var(--primary-1);
+  background-color: var(--neutral-dark-2);
+  padding: calc(2 * var(--default-padding)) var(--default-padding);
+}
+
+.about__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: calc(0.5 * var(--mw));
+  margin: var(--default-padding) auto;
+}
+
+.heading {
+  line-height: 2rem;
+  font-weight: 400;
+}
+
+.heading--2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.paragraph {
+  color: var(--neutral-dark-1);
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.about__feature-container {
+  margin-top: calc(1.5 * var(--default-padding));
+  display: grid;
+  row-gap: calc(3 * var(--default-padding));
+  grid-template-columns: 1fr;
+}
+
+.about__feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: calc(0.45 * var(--default-padding));
+  max-width: calc(0.25 * var(--mw));
+  margin: auto;
+}
+
+.about .heading,
+.about .paragraph {
+  text-align: center;
+}
+
 /* MEDIA QUERIES */
+@media screen and (min-width: 768px) {
+  .about__feature-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .about__container {
+    margin: auto;
+    max-width: calc(.5 * var(--mw));
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .desktop-only {
     display: block;
@@ -224,14 +288,43 @@ nav {
 
   .nav-list > li {
     font-size: 0.75rem;
-    opacity: 0.5;
+    color: var(--neutral-dark-1);
     border-bottom: 3px solid transparent;
     padding: calc(0.75 * var(--default-padding)) 0;
   }
 
   .nav-list > li:hover {
-    border-color: var(--primary-2);
-    opacity: 1;
     color: var(--primary-1);
+    border-color: var(--primary-2);
+  }
+
+  .about {
+    padding: calc(3 * var(--default-padding)) 0;
+  }
+
+  .about .container {
+    padding: 0 calc(1.5 * var(--default-padding));
+  }
+
+  .about__container {
+    margin: 0 auto 0 0;
+    align-items: flex-start;
+  }
+  
+  .about__feature-container {
+    margin-top: 4rem;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: calc(var(--default-padding) * 1.25);
+    font-size: 0.75rem;
+  }
+
+  .about__feature {
+    align-items: flex-start;
+    gap: calc(0.5 * var(--default-padding));
+  }
+
+  .about .heading,
+  .about .paragraph {
+    text-align: left;
   }
 }
