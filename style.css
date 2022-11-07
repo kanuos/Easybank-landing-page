@@ -295,6 +295,17 @@ nav {
 .heading--3 {
   font-size: 0.95rem;
   line-height: 1rem;
+  cursor: pointer;
+}
+
+.heading--3:hover {
+  background-image: linear-gradient(
+    to right,
+    var(--primary-2),
+    var(--primary-3)
+  );
+  background-clip: text;
+  color: transparent;
 }
 
 .article .paragraph {
