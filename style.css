@@ -437,7 +437,7 @@ nav {
 
   .article-container {
     grid-template-columns: repeat(4, 1fr);
-    gap: calc(0.75 * var(--default-padding));
+    gap: calc(1.125 * var(--default-padding));
   }
 
   .article-list .heading--2 {
