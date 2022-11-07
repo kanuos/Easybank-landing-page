@@ -225,8 +225,8 @@ nav {
   .nav-list > li {
     font-size: 0.75rem;
     opacity: 0.5;
-    border-bottom: 2.5px solid transparent;
-    padding: var(--default-padding) 0 calc(0.5 * var(--default-padding)) 0;
+    border-bottom: 3px solid transparent;
+    padding: calc(0.75 * var(--default-padding)) 0;
   }
 
   .nav-list > li:hover {
