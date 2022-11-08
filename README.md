@@ -22,7 +22,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/kanuos/Easybank-landing-page)
-- Live Site URL: [GH Pages](https://your-live-site-url.com)
+- Live Site URL: [GH Pages](https://kanuos.github.io/Easybank-landing-page/)
 
 
 ### Built with
