@@ -444,7 +444,7 @@ header {
 .header {
   margin-top: -10rem;
   position: relative;
-  background-image: url(/images/bg-intro-mobile.svg);
+  background-image: url(./images/bg-intro-mobile.svg);
   background-repeat: no-repeat;
   background-size: 125%;
   background-position: top right;
@@ -499,7 +499,7 @@ header {
 
   .header {
     margin-top: 0rem;
-    background-image: url(/images/bg-intro-desktop.svg);
+    background-image: url(./images/bg-intro-desktop.svg);
     background-size: 55% auto;
     background-position: top right;
     width: 100%;
