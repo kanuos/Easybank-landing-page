@@ -517,6 +517,9 @@ header {
 }
 
 @media screen and (min-width: 1024px) {
+  nav {
+    position: relative;
+  }
   .paragraph {
     font-size: 0.9rem;
   }
